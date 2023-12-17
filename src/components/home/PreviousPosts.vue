@@ -1,5 +1,5 @@
 <template>
-  <div class="previous-posts" v-if="blogs.length">
+  <div class="previous-posts" v-if="blogsSliced.length">
     <LineDivider />
     <h2 class="previous-posts__title">Posts Anteriores</h2>
     <PostSummary v-for="post in blogsSliced" :key="post.id" :id="post.id" :title="post.title"
