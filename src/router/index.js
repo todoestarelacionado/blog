@@ -10,6 +10,15 @@ const routes = [
     component: () => import('@/views/HomeView.vue'),
   },
   {
+    path: '/404',
+    name: 'pageNotFound',
+    component: () => import('@/views/PageNotFoundView.vue'),
+  },
+  {
+    path: '*',
+    redirect: '/404',
+  },
+  {
     path: '/post/:id',
     name: 'post',
     component: () => import('@/views/PostView.vue'),
